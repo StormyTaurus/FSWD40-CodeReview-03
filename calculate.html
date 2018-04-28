@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Insurance Company</title>
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <script src="js/script.js" type="text/javascript" charset="utf-8" async defer></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <div id="top">
+                <h1><span class="lighter_txt">Insurance </span>Company</h1>
+            </div>
+        </header>
+        <main>
+            <form id="form1" action="">
+                <label for="userName" class="user-name">Your Name:</label>
+                <input id="userName" type="text">
+
+                <label for="age" class="age">Age:</label>
+                <input id="age" type="number">
+
+                <label for="country">Country:</label>
+                <input id="country" type="text" list="country_list" name="country_input">
+            
+                <datalist id="country_list">
+                                <option value="Austria">
+                                    <option value="Germany">
+                                        <option value="Italy">
+                            </datalist>
+
+                <label for="horsePower">Horsepower:</label>
+                <input id="horsePower" type="number">
+
+            </form>
+
+                <button class="button_calc" type="" form="form2"  onClick="calculateInsurance()">calculate</button>
+        </main>
+        <footer>
+            <div id="result_calc">Printed calculation goes here</div>
+        </footer>
+    </div>
+</body>
+
+</html>

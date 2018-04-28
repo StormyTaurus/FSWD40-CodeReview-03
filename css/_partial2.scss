@@ -1,0 +1,73 @@
+
+
+form {
+    display: grid;
+    padding: 1em;
+    /*background: #f9f9f9;*/
+    /*border: 1px solid #c1c1c1;*/
+    margin: 2rem auto 0rem auto;
+    max-width: 600px;
+    padding: 1em;
+}
+
+form input {
+    background: #fff;
+    border: 2px solid #9c9c9c;
+    border-radius: 10px;
+}
+
+label {
+    padding: 0.5em 0.5em 0.5em 0;
+    color: white;
+}
+
+input {
+    padding: 0.7em;
+    margin-bottom: 0.5rem;
+}
+
+input:focus {
+    outline: 3px solid orange;
+}
+
+@media (min-width: 400px) {
+    form {
+        grid-template-columns: 200px 0.6fr;
+        grid-gap: 16px;
+    }
+
+    label {
+        text-align: right;
+        grid-column: 1 / 2;
+    }
+
+    input,
+    button {
+        grid-column: 2 / 3;
+    }
+}
+
+#result_calc {
+    height: 3em;
+    margin-top: 1em;
+    font-size: 1.5em;
+}
+
+
+.button_calc {
+    margin-left: 45%;
+    margin-bottom: 1em;
+    background: $secondary-color;
+    color: $primary-color;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 0.7em;
+    width: 11em;
+    height: 2.75em;
+    border: 0;
+    border-radius: 10px;
+}
+
+.button_calc:hover {
+    background: orange;
+}
